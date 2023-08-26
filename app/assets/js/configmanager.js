@@ -6,13 +6,8 @@ const path = require('path')
 const logger = LoggerUtil.getLogger('ConfigManager')
 
 const sysRoot = process.env.APPDATA || (process.platform == 'darwin' ? process.env.HOME + '/Library/Application Support' : process.env.HOME)
-<<<<<<< HEAD
-// TODO change
-const dataPath = path.join(sysRoot, '.LLLauncher')
-=======
 
 const dataPath = path.join(sysRoot, '.helioslauncher')
->>>>>>> 92f2aab2a1b0b99593d98abefc6e6b4386e737e7
 
 const launcherDir = require('@electron/remote').app.getPath('userData')
 
